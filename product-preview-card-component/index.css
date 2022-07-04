@@ -230,6 +230,11 @@ body {
   padding: 1rem;
 }
 
+.card__add_to_cart:hover,
+.card__add_to_cart:focus {
+  background-color: var(--color-deep-aquamarine);
+}
+
 /*******************************************************************************
  * Attribution
  ******************************************************************************/
