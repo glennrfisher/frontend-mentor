@@ -116,16 +116,35 @@ body {
   max-width: 21.4375rem;
   border-radius: 10px;
   background-color: white;
-  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    max-width: 37.5rem;
+  }
 }
 
 .card__content {
   padding: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .card__content {
+    padding: 2rem;
+  }
+}
+
 .card__image > img {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .card__image > img {
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .card__category {
@@ -137,6 +156,12 @@ body {
   color: var(--color-dark-grayish-blue);
 }
 
+@media (min-width: 768px) {
+  .card__category {
+    margin-bottom: 1.25rem;
+  }
+}
+
 .card__product {
   margin-bottom: 1rem;
   font-family: "Fraunces", serif;
@@ -146,8 +171,20 @@ body {
   color: var(--color-very-dark-blue);
 }
 
+@media (min-width: 768px) {
+  .card__product {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .card__description {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card__description {
+    margin-bottom: 1.8125rem;
+  }
 }
 
 .card__pricing {
@@ -155,6 +192,12 @@ body {
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .card__pricing {
+    margin-bottom: 1.875rem;
+  }
 }
 
 .card__current_price {
