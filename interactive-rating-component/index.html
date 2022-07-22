@@ -13,27 +13,60 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <main>
-      <form action="submission.html">
-        <h1>How did we do?</h1>
-        <p>
+    <main class="rating">
+      <div class="rating__star">
+        <img src="images/icon-star.svg" alt="" />
+      </div>
+      <form class="rating__form" action="submission.html">
+        <h1 class="rating__title">How did we do?</h1>
+        <p class="rating__description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <fieldset>
-          <legend>Rating</legend>
-          <input type="radio" id="rating1" name="rating" value="1" />
+        <fieldset class="rating__fieldset">
+          <legend class="sr-only">Rating</legend>
+          <input
+            class="sr-only"
+            type="radio"
+            id="rating1"
+            name="rating"
+            value="1"
+          />
           <label for="rating1">1</label>
-          <input type="radio" id="rating2" name="rating" value="2" />
+          <input
+            class="sr-only"
+            type="radio"
+            id="rating2"
+            name="rating"
+            value="2"
+          />
           <label for="rating2">2</label>
-          <input type="radio" id="rating3" name="rating" value="3" />
+          <input
+            class="sr-only"
+            type="radio"
+            id="rating3"
+            name="rating"
+            value="3"
+          />
           <label for="rating3">3</label>
-          <input type="radio" id="rating4" name="rating" value="4" />
+          <input
+            class="sr-only"
+            type="radio"
+            id="rating4"
+            name="rating"
+            value="4"
+          />
           <label for="rating4">4</label>
-          <input type="radio" id="rating5" name="rating" value="5" />
+          <input
+            class="sr-only"
+            type="radio"
+            id="rating5"
+            name="rating"
+            value="5"
+          />
           <label for="rating5">5</label>
         </fieldset>
-        <button type="submit">Submit</button>
+        <button class="rating__submit" type="submit">Submit</button>
       </form>
     </main>
     <div class="attribution">
