@@ -1,0 +1,143 @@
+/*******************************************************************************
+ * Custom Properties
+ ******************************************************************************/
+
+:root {
+  --ff-primary: Outfit, sans-serif;
+  --fs-400: 0.9375rem;
+  --fs-500: 1.375rem;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #d5e1ef;
+  --color-neutral-400: #7d889e;
+  --color-neutral-800: #1f314f;
+  --color-neutral-900: rgba(0, 0, 0, 0.0476518);
+}
+
+/*******************************************************************************
+ * CSS Reset (https://piccalil.li/blog/a-modern-css-reset/)
+ ******************************************************************************/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/*******************************************************************************
+ * Global
+ ******************************************************************************/
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-normal);
+  line-height: 1.25;
+  color: var(--color-neutral-400);
+  background-color: var(--color-neutral-200);
+}
+
+/*******************************************************************************
+ * Layout
+ ******************************************************************************/
+
+.container {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  max-width: 23.4375rem;
+  margin: auto;
+  padding-inline: 1.75rem;
+}
+
+/*******************************************************************************
+ * Card
+ ******************************************************************************/
+
+.card {
+  max-width: 20rem;
+  padding: 1rem;
+  background-color: var(--color-neutral-100);
+  border-radius: 1.25rem;
+  box-shadow: 0 1.5rem 1.5rem var(--color-neutral-900);
+}
+
+.card__image > img {
+  border-radius: 0.625rem;
+}
+
+.card__content {
+  margin-block-start: 1.5rem;
+  margin-block-end: 1rem;
+  padding-inline: 1rem;
+}
+
+.card__content > * + * {
+  margin-top: 1rem;
+}
+
+/*******************************************************************************
+ * Attribution
+ ******************************************************************************/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*******************************************************************************
+ * Utilities
+ ******************************************************************************/
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-neutral-800 {
+  color: var(--color-neutral-800);
+}
